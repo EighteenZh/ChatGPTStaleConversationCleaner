@@ -1,31 +1,33 @@
 # ChatGPT Stale Conversation Cleaner
 
-一个用于清理 ChatGPT/Codex Windows 桌面端本地残留对话索引的图形工具。
+[English](README.md) | [中文](README.zh-CN.md)
 
-## 功能
+A Windows desktop utility for removing stale ChatGPT/Codex conversation entries from the local desktop index.
 
-- 启动后列出本机 ChatGPT 对话标题
-- 支持筛选、逐条勾选、全选和取消全选
-- 删除前二次确认
-- 中文 / English / 跟随系统
-- 备份选项默认关闭，也可以手动选择备份位置
+## Features
 
-## 使用方法
+- Lists ChatGPT conversation titles from the local index on startup
+- Filter, select individual rows, select all, or clear the selection
+- Confirmation before deletion
+- Chinese, English, or follow-system UI language
+- Backups are off by default, with an optional custom backup location
 
-1. 完全退出 ChatGPT/Codex 桌面端，包括托盘后台。
-2. 双击 `ChatGPTStaleConversationCleaner_v4.exe`。
-3. 选择要清理的对话，确认后执行清理。
+## Usage
 
-程序只修改本机的桌面端对话索引，不会删除网页端的云端对话。
+1. Fully quit the ChatGPT/Codex desktop app, including its tray process.
+2. Double-click `ChatGPTStaleConversationCleaner_v4.exe`.
+3. Select the conversations to clean up and confirm the operation.
 
-## 隐私
+The program only modifies the local desktop index. It does not delete cloud conversations from the web app.
 
-当前版本没有联网、上传或遥测逻辑。程序读取当前 Windows 用户目录下的：
+## Privacy
+
+The current version has no network, upload, or telemetry logic. It reads the following database under the current Windows user's profile:
 
 `%USERPROFILE%\\.codex\\sqlite\\codex-dev.db`
 
-程序不会把开发者电脑上的数据库或用户名打包进去。备份功能默认关闭；如果手动开启，程序会把本地数据库复制到用户选择的目录，请妥善保管备份文件。
+The developer's database and username are not bundled with the program. Backups are disabled by default; if enabled, the program copies the local database to the directory selected by the user. Keep backup files secure.
 
-## 说明
+## Notes
 
-当前提供的是 Windows 独立版，不要求另外安装 Python。源码和图标文件也一并提供，便于检查和自行打包。
+The included Windows standalone build does not require Python to be installed. The source code and icon are included so that users can inspect or rebuild the program.
