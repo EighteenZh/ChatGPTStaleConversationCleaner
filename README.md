@@ -2,6 +2,13 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
+[!IMPORTANT]
+This project is no longer maintained or recommended for use.
+
+The issue this utility was created to work around has been fixed in recent versions of the ChatGPT desktop app. This tool is therefore no longer necessary.
+
+This repository is retained for historical and technical reference only.
+
 A Windows desktop utility for removing stale ChatGPT/Codex conversation entries from the local desktop index.
 
 ## Features
