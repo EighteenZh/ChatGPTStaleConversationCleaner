@@ -2,6 +2,13 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
+[!IMPORTANT]
+本项目已停止维护，不再建议使用。
+
+本工具原本用于解决 ChatGPT 桌面端本地索引中残留会话的问题。该问题现已在新版 ChatGPT 中修复，因此本工具已不再需要。
+
+本仓库仅作为历史和技术参考保留。
+
 一个用于清理 ChatGPT/Codex Windows 桌面端本地残留对话索引的图形工具。
 
 ## 功能
